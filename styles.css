@@ -1,3 +1,31 @@
+/*VARS*/
+:root {
+    --border-color: rgba(255, 255, 255, 0.162);
+    --text-margin: 1vw;
+}
+
+@font-face {
+    font-family: Jersey25;
+    src: url("Media/Fonts/Jersey25-Regular.ttf");
+}
+
+@font-face {
+    font-family: def;
+    src: url("Media/Fonts/def.ttf");
+}
+
+
+
+/*CONSTANT ACROSS PAGES*/
+body {
+    
+    font-family: monospace;
+    
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='31' fill='none' viewBox='0 0 26 31'%3E%3Cpath fill='%23fff' fill-rule='evenodd' stroke='%23010101' stroke-linecap='square' stroke-width='2.5' d='M21.993 14.425 2.549 2.935l4.444 23.108 4.653-10.002 10.347-1.616Z' clip-rule='evenodd'/%3E%3C/svg%3E"), auto;
+}
+
+
+
 /*INDEX  */
 #index-body {
     width: 100%;
@@ -6,17 +34,20 @@
     padding: 0;
 
     background-color: black;
+    color: white;
 
     background-image: url("Media/welcome-background.png");
     background-repeat:no-repeat;
     background-size: 500% ;
-    background-position-x: 100%;
-    background-position-y: 15%;
+    background-position-x: 90%;
+    background-position-y: 30%;
 
     overflow: hidden;
 
     user-select: none;
 }
+
+
 
 
 #main-section {
@@ -36,7 +67,7 @@
     background-color: rgba(255, 255, 255, 0.007);
 
     border-style: solid;
-    border-color: rgba(255, 255, 255, 0.068);
+    border-color: var(--border-color);
     border-width: 1px;
     border-radius: 1vw;
 
@@ -59,10 +90,96 @@
     border-radius: 100%;
 }
 
+#contact-list {
+    list-style-type:none;
+
+    position: absolute;
+    left: 50%;
+
+    li {
+        
+        float: left;
+        margin-left: 1vw;
+
+        background-color: rgba(251, 251, 251, 0.084);
+
+        width: 3.5vw;
+        height: 3.5vw;
+
+        transition: all .3s;
+
+        border-radius: .3vw;
+
+        img {
+            margin-top: 10%;
+            margin-left: 10%;
+            width: 80%;
+        }
+    }
+
+    li:hover {
+        background-color: rgba(251, 251, 251, 0.189);
+        margin-top: -2%;
+        
+    }
+}
+
+#username-display {
+    margin-left: var(--text-margin);
+
+    font-weight:100;
+    text-align: left;
+    font-size: 1vw;
+    
+    letter-spacing: .3vw;
+
+    color: rgb(0, 200, 255);
+}
+
+#name-header {
+    margin-left: var(--text-margin);
+    margin-bottom: 1vh;
+    margin-top: 0vh;
+
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+#welcome-paragraph {
+    color: rgb(202, 202, 202);
+
+    margin-left: var(--text-margin);
+    
+    font-size: 1.3vw;
+    font-weight: 1;
+}
+
+.main-button {
+    margin: auto;
+    text-align: center;
+
+    width: 90%;
+    height: 5vh;
+
+    border-radius: 2vw;
+}
+
 .break {
-    margin: 0;
     border: none;
 
-    background-color: rgba(255, 255, 255, 0.068);
+    background-color: var(--border-color);
     height: 1px;
+}
+
+
+
+
+/*UTILITY CLASSES*/
+.invert {
+    filter: invert(1);
+}
+
+.green-to-blue-gradient {
+    background: rgb(58,180,68);
+    background: linear-gradient(90deg, rgba(58,180,68,1) 0%, rgba(69,250,252,1) 100%); 
 }
