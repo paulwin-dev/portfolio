@@ -19,12 +19,24 @@ function wait(secondsTimeout){
     });
 }
 
+function c(classname){
+    return document.getElementsByClassName(classname)
+}
+
 
 const linkedBoxes = document.getElementsByClassName("open-link-on-click");
+const linkedButtons = c("main-button")
 
 for (const box of linkedBoxes){
     box.addEventListener('click', ()=>{
         const classes = box.className.split(' ')
         open(classes[1], "_blank")
+    })
+}
+
+for (const e of linkedButtons){
+    console.log(e.dataset)
+    e.addEventListener('click', ()=>{
+        open(e.dataset.linkto,"_self")
     })
 }
