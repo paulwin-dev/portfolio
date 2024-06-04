@@ -14,7 +14,7 @@ function $(classNameorId){
 function wait(secondsTimeout){
     return new Promise((resolve) => {
         setTimeout(()=>{
-            resolve
+            resolve()
         }, secondsTimeout*1000)
     });
 }
