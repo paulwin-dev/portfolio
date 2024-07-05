@@ -3,6 +3,11 @@
     src: url("../media/Fonts/Pixelated.ttf");
 }
 
+@font-face {
+    font-family: Regular;
+    src: url("../media/Fonts/Pixelated.ttf");
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -203,6 +208,7 @@ html {
 
         color: whitesmoke;
         font-size: 3vh;
+        font-weight: 100;
 
     }
 }
@@ -237,8 +243,8 @@ html {
     }
 
     p {
-        font-weight:100;
-        font-family: monospace;
+        font-size: 2.5vh;
+        font-family: Regular;
     }
 }
 
