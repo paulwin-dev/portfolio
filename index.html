@@ -3,57 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="code/init.js" defer></script>
     <title>obsp's portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="Scripts/indexapp.js"></script>
 </head>
-<body id="index-body">
-    
-    <div id="main-section">
+<body>
+    <section id="welcome-section">
+        <img src="media/profile.jpg" alt="" id="profile-pic">
+        <p id="name-text">obsp</p>
+    </section>
+    <section id="about-me-section">
+        <div id="about-me-open">
+            <h1 id="about-me-open-text">ABOUT ME</h1>
+            <img src="media/arrow-down.png" alt="" class="dropdown-arrow">
+        </div>
+        <div id="about-me" hidden>
+            <p>
+                I'm a 15 year old fullstack game and web developer based in the US.
+                Since starting my journey as a developer almost <b>half a decade</b> ago, I've become familiar with 
+                a number of game engines. The engines I'm most experienced with are: <br>
+                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;-</span> Roblox Studio <br>
+                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;-</span> Unity 3D & 2D <br>
+                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;-</span> Construct3 <br>
+                In addition to these game engines, I have experience making 2D games from scratch
+                using the Java AWT and Swing libraries. I'm also familiar with a bunch of programming languages,
+                including (ranked from most familiar to least): <br>
+                <span style="color: rgb(254, 196, 37);">&nbsp;&nbsp;&nbsp;1.</span> Luau <br>
+                <span style="color: rgb(209, 209, 209);">&nbsp;&nbsp;&nbsp;2.</span> Java <br>
+                <span style="color: rgb(239, 172, 109);">&nbsp;&nbsp;&nbsp;3.</span> Python <br>
+                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;4.</span> JavaScript <br>
+                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;5.</span> C# <br>
+                If you have a project in mind that uses a language not included above, please feel free
+                to reach out regardless and I can likely learn the language while working on your project!
+                <span style="color: gold;"> Thank you for checking out my portfolio and I hope to work with you soon!</span>
+            </p>
+        </div>
+    </section>
 
+    <section id="past-work-section">
+        <div id="past-work-open">
+            <h1 id="past-work-open-text">PAST WORK</h1>
+            <img src="media/arrow-down.png" alt="" class="dropdown-arrow">
+        </div>
+        <div id="past-work" hidden>
+            <div class="past-work-item">
+                <h1>
+                    <a target="_blank" href="https://www.roblox.com/games/14482243012/Realistic-Gun-test">Realistic Gun Test (DISCONTINUED)</a>
+                </h1>
+                
+                <div class="past-work-item-cover-container">
+                    <img src="media/RGTIcon.webp" alt="" class="past-work-embed">
+                </div>
+                <div class="past-work-item-footer">
+                    <h1>Role: Lead Scripter</h1>
+                    <h1>Description: </h1>
+                    <p>
+                        Sadly discontinued, this game would've been a realistic military shooter game with many different
+                        gamemodes and much more. I scripted the main menu, the loadout system, the currency and level system,
+                        kill effects, kill cam, started on a custom weapons framework, and much more.
+                    </p>
+                </div>
+            </div>
 
-        <div id="top-bar">
-            <img src="Media/profile.jpg" alt="Profile" id="profile-picture">
-            <ul id="contact-list">
-                <li class="open-link-on-click https://github.com/ObSp">
-                    <img src="Media/Logos/github.png" alt="" class="invert">
-                </li>
-                <li class="open-link-on-click https://discord.com/users">
-                    <img src="Media/Logos/discord.png" alt="" class="invert">
-                </li>
-                <li></li>
-            </ul>
+            <div class="past-work-item">
+                <h1>
+                    sword rng
+                </h1>
+                
+                <div class="past-work-item-cover-container" style="height: fit-content;">
+                    <video src="media/RollMechanic.mp4" class="past-work-embed" controls></video>
+                </div>
+                <div class="past-work-item-footer">
+                    <h1>Role: Lead Scripter</h1>
+                    <h1>Description: </h1>
+                    <p>
+                        Currently in development, this project is a copy of Sol's RNG about
+                        rolling for swords and fighting with them. So far, I've created an
+                        exploit-safe rolling system, global leaderboards, an inventory system
+                        and a currency and fighting system. Note that the video shown above is
+                        an early prototype of the actual rolling system.
+                    </p>
+                </div>
+            </div>
+
+            <div class="past-work-item">
+                <h1>
+                    <a target="_blank" href="https://www.roblox.com/games/15357459254/Deep-In-Debt">Deep in Debt</a>
+                </h1>
+                
+                <div class="past-work-item-cover-container" style="height: fit-content;">
+                    <img src="media/DeepInDebt.webp" alt="" class="past-work-embed">
+                </div>
+                <div class="past-work-item-footer">
+                    <h1>Role: Lead Scripter & Project Manager</h1>
+                    <h1>Description: </h1>
+                    <p>
+                        A personal project I've been working on since April 2024 now, the game is close to completion.
+                        It was heavily inspired by "find cheese to feed a rat" by Jimmalonia and is about getting out of
+                        debt within 3 days. The game includes a dialogue system, light & door systems, a thought-out storyline,
+                        and much more. The game linked above is a playable yet incomplete version of the game from mid-June.
+                    </p>
+                </div>
+            </div>
+
+            <div class="past-work-item">
+                <h1>
+                    <a target="_blank" href="https://github.com/ObSp/JGame-Public">JGame</a>
+                </h1>
+                
+                <div class="past-work-item-cover-container">
+                    
+                </div>
+                <div class="past-work-item-footer">
+                    <h1>Role: Creator & Maintainer</h1>
+                    <h1>Description: </h1>
+                    <p>
+                        Since learning Java in January 2024, I've always disliked how annoying it is to
+                        create even a simple game. To fix this, I created the JGame framework. It uses all the
+                        building blocks included in the AWT and Swing libraries but provides a developer friendly
+                        API with a stable game loop, many different instances like images and rectangles and services
+                        that allow things such as tweening, raycasting, and detecting input. Many names and functionalities
+                        of this framework were derived from Roblox.
+                    </p>
+                </div>
+            </div>
+
+            <div class="past-work-item">
+                <h1>
+                    <a target="_blank" href="index.html">Portfolio Website</a>
+                </h1>
+                
+                <div class="past-work-item-cover-container"></div>
+
+                <div class="past-work-item-footer">
+                    <h1>Role: Creator</h1>
+                    <h1>Description: </h1>
+                    <p>
+                        Yep, you're seeing it right now. This website was programmed from scratch using HTML, CSS,
+                        and vanilla JS.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section" class="last-section">
+        <div id="contact-open">
+            <h1 id="contact-open-text">CONTACT ME</h1>
+            <img src="media/arrow-down.png" alt="" class="dropdown-arrow">
         </div>
 
+        <div id="contact-me" hidden>
+            <div id="contact-me-mid">
+                <p>Project Name:</p>
+                <input type="text" id="project-name-inp" class="req-input">
 
-        <hr class="break">
+                <p>Project Description:</p>
+                <input type="text" id="project-desc-inp" class="req-input">
 
-        <h2 id="username-display">@OBSP</h2>
-        <h1 id="name-header">ObSp</h1>
+                <p>Estimated Scripting Budget (USD/Robux):</p>
+                <input type="text" id="project-budget-inp" class="req-input">
 
-        <p id="welcome-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </p>
+                <p>Deadline:</p>
+                <input type="text" id="project-deadline-inp" class="req-input">
 
-        <div class="main-button green-to-blue-gradient" data-linkTo = "Pages/pastwork.html">
-            <p>Past Work</p>
-            <img src="Media/Logos/portfolio.png" alt="" class="invert">
-            <h4>View my past work</h4>
+                <p>Your Discord Contact:</p>
+                <input type="text" id="usr-contact-inp" class="req-input">
+
+                <input type="button" value="Send" id="submit-req-button">
+            </div>
         </div>
-        <div class="main-button violet-to-yellow-gradient" data-linkTo = "Pages/pastwork.html">
-            <p>More Information</p>
-            <img src="Media/Logos/info.png" alt="" class="invert">
-            <h4>View additional information</h4>
-        </div>
-        <div class="main-button violet-to-blue-gradient" style="margin-bottom: 2%;" data-linkTo = "Pages/pastwork.html">
-            <p>Commision Me</p>
-            <img src="Media/Logos/plus.png" alt="" class="invert">
-            <h4>Send a commision request to me</h4>
-        </div>
-    </div>
-
+            
+    </section>
 </body>
 </html>
