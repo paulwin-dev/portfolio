@@ -43,6 +43,19 @@ html {
     background-color: rgb(40, 35, 59);
 }
 
+#welcome-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    top: calc(100% - 17vh);
+
+    li {
+        margin-right: 10px;
+    }
+}
+
 #profile-pic {
     width: 15vh;
 
@@ -58,6 +71,7 @@ html {
     color: white;
 
     position: relative;
+
     left: calc(20px + 19vh);
     top: calc(100% - 48vh);
 
