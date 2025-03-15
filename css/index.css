@@ -37,7 +37,7 @@ html {
 
     background-image: url("../media/Background.png");
     background-repeat: no-repeat;
-    background-size: calc(120vh * (661/306)) 120vh;
+    background-size: calc(120vh * (661/200));
     background-position-x: 50%;
 
     background-color: rgb(40, 35, 59);
