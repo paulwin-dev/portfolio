@@ -1,0 +1,804 @@
+:root {
+    --bg: #121215;
+    --card: #0d0d10;
+    --line: #2b2b2e;
+    --accent: #4086F0;
+    --sub: #8c8c8d;
+    --text: #f2f2f3
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    background: var(--bg);
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden
+}
+
+a {
+    color: inherit
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: #121215d9;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line)
+}
+
+nav .wrap {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    height: 56px;
+    font-size: 15px
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--sub);
+    transition: color .15s
+}
+
+nav a:hover {
+    color: #fff
+}
+
+nav b {
+    color: #fff;
+    margin-right: auto;
+    font-weight: 700
+}
+
+.hero {
+    position: relative;
+    padding: 120px 0 110px
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #ffffff3a 1px, #fff0 1px);
+    -webkit-mask-image: radial-gradient(circle at 50% 40%, #000, #0000 70%);
+    mask-image: radial-gradient(circle at 50% 40%, #000, #0000 70%);
+    pointer-events: none
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(520px 260px at 82% 8%, #4086f02e, #0000);
+    pointer-events: none
+}
+
+.hero .wrap {
+    position: relative;
+    z-index: 1
+}
+
+.avail {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 14px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--card);
+    font-size: 14px;
+    color: var(--sub)
+}
+
+.avail i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3ddc84;
+    box-shadow: 0 0 0 0 #3ddc8488;
+    animation: pulse 2.4s infinite
+}
+
+@keyframes pulse {
+    70% {
+        box-shadow: 0 0 0 9px #3ddc8400
+    }
+}
+
+h1 {
+    font-size: clamp(40px, 7vw, 76px);
+    line-height: 1.04;
+    letter-spacing: -.03em;
+    margin: 26px 0 20px;
+    max-width: 12em
+}
+
+.hero p.lead {
+    font-size: clamp(17px, 2vw, 21px);
+    color: var(--sub);
+    max-width: 36em;
+    margin: 0 0 34px
+}
+
+.hero p.lead b {
+    color: #fff;
+    font-weight: 600
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform .12s, border-color .15s;
+    cursor: pointer;
+    font-family: inherit
+}
+
+.btn:hover {
+    border-color: #555;
+    transform: translateY(-1px)
+}
+
+.btn.pri {
+    background: var(--accent);
+    border-color: var(--accent)
+}
+
+.btn.pri:hover {
+    border-color: #fff
+}
+
+section {
+    padding: 80px 0
+}
+
+h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    letter-spacing: -.02em;
+    margin: 0 0 10px
+}
+
+.sec-sub {
+    color: var(--sub);
+    margin: 0 0 48px;
+    max-width: 36em
+}
+
+.proj {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 44px;
+    align-items: center;
+    margin-bottom: 76px
+}
+
+.proj:nth-child(even) .media {
+    order: 2
+}
+
+.media {
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1b2233, #0d0d10);
+    aspect-ratio: 16/9;
+    box-shadow: 0 20px 50px #0008
+}
+
+.media img,
+.media video,
+.media iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+.proj h3 {
+    font-size: 28px;
+    letter-spacing: -.02em;
+    margin: 0 0 4px
+}
+
+.proj h3 a {
+    text-decoration: none
+}
+
+.proj h3 a:hover {
+    color: var(--accent)
+}
+
+.role {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 0 14px
+}
+
+.proj p.d {
+    color: var(--sub);
+    margin: 0 0 16px
+}
+
+.proj ul {
+    margin: 0 0 18px;
+    padding-left: 20px
+}
+
+.proj li {
+    margin-bottom: 5px
+}
+
+.proj li::marker {
+    color: var(--accent)
+}
+
+.more {
+    font-size: 15px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600
+}
+
+.more:hover {
+    text-decoration: underline
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px
+}
+
+.skill {
+    padding: 26px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px
+}
+
+.skill h3 {
+    margin: 0 0 8px;
+    font-size: 19px
+}
+
+.skill p {
+    margin: 0;
+    color: var(--sub);
+    font-size: 15px
+}
+
+.also {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 20px
+}
+
+.also a {
+    padding: 12px 18px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--card);
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--sub);
+    transition: color .15s, border-color .15s
+}
+
+.also a:hover {
+    color: #fff;
+    border-color: #555
+}
+
+.also b {
+    color: #fff
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 56px
+}
+
+form {
+    display: grid;
+    gap: 14px;
+    padding: 28px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px
+}
+
+label {
+    display: grid;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--sub)
+}
+
+input,
+textarea {
+    font: inherit;
+    color: #fff;
+    background: #18181c;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 11px 13px
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--accent);
+    border-color: transparent
+}
+
+textarea {
+    min-height: 96px;
+    resize: vertical
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px
+}
+
+#status {
+    font-size: 14px;
+    color: var(--sub);
+    margin: 0
+}
+
+.links {
+    display: grid;
+    gap: 12px;
+    margin-top: 28px
+}
+
+.links a {
+    color: var(--sub);
+    text-decoration: none
+}
+
+.links a:hover {
+    color: #fff
+}
+
+footer {
+    border-top: 1px solid var(--line);
+    padding: 30px 0;
+    color: var(--sub);
+    font-size: 14px
+}
+
+footer a {
+    color: var(--accent);
+    text-decoration: none
+}
+
+@media(max-width:780px) {
+
+    .proj,
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 22px
+    }
+
+    .proj:nth-child(even) .media {
+        order: 0
+    }
+
+    .skills,
+    .row {
+        grid-template-columns: 1fr
+    }
+
+    .hero {
+        padding: 80px 0 70px
+    }
+
+    nav .wrap {
+        gap: 16px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    * {
+        animation: none !important;
+        transition: none !important
+    }
+
+    html {
+        scroll-behavior: auto
+    }
+}
+
+.stats {
+    border-block: 1px solid var(--line);
+    background: var(--card)
+}
+
+.stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    gap: 28px;
+    padding: 26px 24px
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 14px
+}
+
+.stat svg {
+    width: 26px;
+    height: 26px;
+    fill: none;
+    stroke: #5b8fe8;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex: none
+}
+
+.stat .top {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.stat b {
+    font-size: 24px;
+    line-height: 1.1;
+    color: #5b8fe8;
+    font-weight: 700
+}
+
+.stat span {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #3ddc84;
+    background: #3ddc8420;
+    border: 1px solid #3ddc8440;
+    border-radius: 999px;
+    padding: 1px 9px
+}
+
+.badge::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: currentColor
+}
+
+.badge.off {
+    color: var(--sub);
+    background: #8c8c8d1a;
+    border-color: #8c8c8d40
+}
+
+@media(max-width:900px) {
+    .stat-row {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+#reviews-grid {
+    columns: 340px;
+    column-gap: 20px
+}
+
+.review {
+    break-inside: avoid;
+    margin: 0 0 20px;
+    padding: 26px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px
+}
+
+.review img {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    margin-bottom: 18px
+}
+
+.review blockquote {
+    margin: 0 0 18px;
+    font-size: 17px
+}
+
+.review blockquote::before {
+    content: "\201C";
+    color: var(--accent);
+    font-size: 44px;
+    line-height: 0;
+    vertical-align: -.35em;
+    margin-right: 4px
+}
+
+.review figcaption {
+    font-size: 14px;
+    color: var(--sub)
+}
+
+.review figcaption b {
+    display: block;
+    color: #fff;
+    font-size: 15px
+}
+
+#home-contact-items {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 0;
+    margin-top: -15px;
+}
+.home-contact-item {
+    width: 45px;
+    height: 45px;
+
+    background-color: #0d0d10;
+
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: #2b2b2e;
+    outline-width: 1px;
+
+    border-radius: 10px;
+
+    margin-right: 13px;
+
+    cursor: pointer;
+
+    transition: all .1s;
+}
+
+.home-contact-item img {
+    height: 20px;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-contact-item:hover {
+    outline-color: var(--accent);
+    outline-width: 2px;
+}
+
+/* ---------- Project checkpoints ---------- */
+#checkpoints {
+    position: fixed;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: min(56vh, 440px);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s
+}
+
+#checkpoints.show {
+    opacity: 1;
+    pointer-events: auto
+}
+
+#checkpoints::before,
+.cp-fill {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    width: 2px;
+    border-radius: 2px
+}
+
+#checkpoints::before {
+    bottom: 6px;
+    background: var(--line)
+}
+
+.cp-fill {
+    height: calc((100% - 12px) * var(--p, 0));
+    background: var(--accent)
+}
+
+#checkpoints button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+    color: var(--sub)
+}
+
+.cp-label {
+    padding: 3px 9px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--card);
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(6px);
+    transition: opacity .15s, transform .15s;
+    pointer-events: none
+}
+
+#checkpoints button:hover .cp-label,
+#checkpoints button:focus-visible .cp-label,
+#checkpoints button.active .cp-label {
+    opacity: 1;
+    transform: none
+}
+
+#checkpoints button.active .cp-label {
+    color: #fff;
+    border-color: var(--accent)
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--line);
+    transition: background .2s, border-color .2s, transform .2s, box-shadow .2s
+}
+
+#checkpoints button.done .dot {
+    background: var(--accent);
+    border-color: var(--accent)
+}
+
+#checkpoints button.active .dot {
+    transform: scale(1.35);
+    box-shadow: 0 0 0 4px #4086f044
+}
+
+@media(max-width:1200px) {
+    #checkpoints {
+        right: 8px
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px
+    }
+
+    #checkpoints::before,
+    .cp-fill {
+        right: 4px
+    }
+}
+
+@media(max-width:780px) {
+    #checkpoints {
+        top: auto;
+        right: auto;
+        left: 50%;
+        bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+        transform: translateX(-50%);
+        width: min(88vw, 360px);
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: #0d0d10e6;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 24px #0009
+    }
+
+    #checkpoints::before,
+    #checkpoints .cp-fill {
+        left: 18px;
+        right: auto;
+        top: 50%;
+        bottom: auto;
+        height: 2px;
+        margin-top: -1px
+    }
+
+    #checkpoints::before {
+        right: 18px;
+        width: auto
+    }
+
+    #checkpoints .cp-fill {
+        width: calc((100% - 36px) * var(--p, 0))
+    }
+
+    #checkpoints button {
+        padding: 14px 12px
+    }
+
+    .cp-label {
+        display: none
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px
+    }
+
+    /* current project name, shown above the pill */
+    #checkpoints::after {
+        content: attr(data-label);
+        position: absolute;
+        bottom: calc(100% + 8px);
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 4px 12px;
+        border: 1px solid var(--accent);
+        border-radius: 999px;
+        background: var(--card);
+        color: #fff;
+        font-size: 12px;
+        white-space: nowrap;
+        pointer-events: none
+    }
+}

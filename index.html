@@ -1,205 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <script type="module" src="code/init.js" defer></script>
-    <title>obsp's portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paul - Roblox Developer</title>
+    <meta name="description"
+        content="Roblox developer who builds complete games: gameplay systems, UI, data saving and server logic. Open for commissions.">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <section id="welcome-section">
-        <img src="media/profile.jpg" alt="" id="profile-pic">
-        <p id="name-text">obsp</p>
+    <nav>
+        <div class="wrap"><b>Paul</b><a href="#work">Work</a><a href="#build">Services</a><a href="#reviews"
+                id="nav-reviews" hidden>Reviews</a><a href="#contact">Contact</a>
+    </nav>
+    <div id="checkpoints" role="navigation" aria-label="Project checkpoints"></div>
 
-        <ul id="welcome-ul" hidden>
-            <li></li>
-            <li></li>
-        </ul>
-    </section>
-    <section id="about-me-section">
-        <div id="about-me-open">
-            <h1 id="about-me-open-text">ABOUT ME</h1>
-            <img src="media/arrow-down.png" alt="" class="dropdown-arrow">
+    <header class="hero">
+        <div class="wrap">
+            <span class="avail"><i></i>Open for commissions</span>
+            <h1>I build complete Roblox games, solo.</h1>
+            <p class="lead">Gameplay systems, UI, data saving and server logic from one developer, so you don't have to
+                coordinate three scripters. <b>5+ years</b> on Roblox, with work on games that passed <b>7 million
+                    visits</b>.</p>
+            <div class="btns"><a class="btn pri" href="#contact">Start a project</a><a class="btn" href="#work">See my
+                    work</a></div>
         </div>
-        <div id="about-me" hidden>
-            <p>
-                I'm a 16 year old fullstack developer based in Germany.
-                Since starting my journey as a developer almost <b>half a decade</b> ago, 
-                I've contributed to more than <span style="color: gold;"> 4 million visits</span> and become familiar with 
-                a number of game engines. The engines I'm most experienced with are: <br>
-                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;-</span> Roblox Studio <br>
-                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;-</span> Unity 3D & 2D <br>
-                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;-</span> Construct3 <br>
-                In addition to these game engines, I have experience making 2D games from scratch
-                using the Java AWT and Swing libraries. I'm also familiar with a bunch of programming languages,
-                including (ranked from most familiar to least): <br>
-                <span style="color: rgb(254, 196, 37);">&nbsp;&nbsp;&nbsp;1.</span> Luau <br>
-                <span style="color: rgb(209, 209, 209);">&nbsp;&nbsp;&nbsp;2.</span> Java <br>
-                <span style="color: rgb(239, 172, 109);">&nbsp;&nbsp;&nbsp;3.</span> Python <br>
-                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;4.</span> JavaScript <br>
-                <span style="color: rgb(109, 135, 239);">&nbsp;&nbsp;&nbsp;5.</span> C# <br>
-                If you have a project in mind that uses a language not included above, please feel free
-                to reach out regardless and I can likely learn the language while working on your project!
-                <span style="color: gold;"> Thank you for checking out my portfolio and I hope to work with you soon!</span>
-            </p>
-        </div>
-    </section>
-
-    <section id="past-work-section">
-        <div id="past-work-open">
-            <h1 id="past-work-open-text">PAST WORK</h1>
-            <img src="media/arrow-down.png" alt="" class="dropdown-arrow">
-        </div>
-        <div id="past-work" hidden>
-            <div class="past-work-item">
-                <h1>
-                    <a target="_blank" href="https://www.roblox.com/games/16772371910/Flame-Trainer-AVATAR-EDITOR-FREE-HELLO-KITTY">Flame Trainer</a>
-                </h1>
-                
-                <div class="past-work-item-cover-container">
-                    <img src="media/FlameTrainer.webp" alt="" class="past-work-embed">
-                </div>
-                <div class="past-work-item-footer">
-                    <h1>Role: Programmer</h1>
-                    <h1>Description: </h1>
-                    <p>
-                        As lead programmer for this project, I added many things
-                        such as a duel system, wig snatching system, skin picker, and more.
-                        Since then, I have left the project, but it is still being worked on.
-                    </p>
+    </header>
+    <section class="stats" aria-label="Live game stats">
+        <div class="wrap stat-row">
+            <div class="stat"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18" />
+                </svg>
+                <div>
+                    <div class="top"><b data-stat="visits">...</b></div><span>Lifetime visits</span>
                 </div>
             </div>
-
-            <div class="past-work-item">
-                <h1>
-                    <a target="_blank" href="https://www.roblox.com/games/14482243012/Realistic-Gun-test">Realistic Gun Test</a>
-                </h1>
-                
-                <div class="past-work-item-cover-container">
-                    <img src="media/RGTIcon.png" alt="" class="past-work-embed">
-                </div>
-                <div class="past-work-item-footer">
-                    <h1>Role: Lead Programmer</h1>
-                    <h1>Description: </h1>
-                    <p>
-                        On its way to becoming the next big realistic roblox shooter, I am leading the scripting
-                        process of this game. I've coded everything that's currently in the game except the gun system,
-                        including from a round system, all the UI, quests, the level system, and more. In addition to that,
-                        I'm working on a realistic jet system for the game, currently testeable <a class="item-link-p" href="https://www.roblox.com/games/133521604713323/Jet-Fighter-Testing">here</a>.
-                    </p>
+            <div class="stat"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="9" cy="8" r="3.5" />
+                    <path
+                        d="M2.5 20c0-3.6 3-6 6.5-6s6.5 2.4 6.5 6M16 4.6a3.5 3.5 0 010 6.8M18 14.3c2 .8 3.5 2.6 3.5 5.7" />
+                </svg>
+                <div>
+                    <div class="top"><b data-stat="ccu">...</b><em class="badge" id="live-badge"
+                            style="font-style:normal">...</em></div><span>Current CCU</span>
                 </div>
             </div>
-
-            <div class="past-work-item">
-                <h1>
-                    sword rng
-                </h1>
-                
-                <div class="past-work-item-cover-container" style="height: fit-content;">
-                    <video src="media/RollMechanic.mp4" class="past-work-embed" controls></video>
-                </div>
-                <div class="past-work-item-footer">
-                    <h1>Role: Lead Programmer</h1>
-                    <h1>Description: </h1>
-                    <p>
-                        Sadly cancelled, this project was a copy of Sol's RNG about
-                        rolling for swords and fighting with them. I created an
-                        exploit-safe rolling system, global leaderboards, an inventory system
-                        and a currency and fighting system. Note that the video shown above is
-                        an early prototype of the actual rolling system.
-                    </p>
-                </div>
-            </div>
-
-            <div class="past-work-item">
-                <h1>
-                    <a target="_blank" href="https://www.roblox.com/games/15357459254/Deep-In-Debt">Deep in Debt</a>
-                </h1>
-                
-                <div class="past-work-item-cover-container" style="height: fit-content;">
-                    <img src="media/DeepInDebt.webp" alt="" class="past-work-embed">
-                </div>
-                <div class="past-work-item-footer">
-                    <h1>Role: Lead Programmer & Project Manager</h1>
-                    <h1>Description: </h1>
-                    <p>
-                        A personal project I've been working on since April 2024 now, the game is close to completion.
-                        It was heavily inspired by "find cheese to feed a rat" by Jimmalonia and is about getting out of
-                        debt within 3 days. The game includes a dialogue system, light & door systems, a thought-out storyline,
-                        and much more. The game linked above is a playable yet incomplete version of the game from mid-June 2024.
-                    </p>
-                </div>
-            </div>
-
-            <div class="past-work-item">
-                <h1>
-                    <a target="_blank" href="https://github.com/ObSp/JGame-Public">JGame</a>
-                </h1>
-                
-                <div class="past-work-item-cover-container">
-                    
-                </div>
-                <div class="past-work-item-footer">
-                    <h1>Role: Creator & Maintainer</h1>
-                    <h1>Description: </h1>
-                    <p>
-                        Since learning Java in January 2024, I've always disliked how annoying it is to
-                        create even a simple game. To fix this, I created the JGame framework. It uses all the
-                        building blocks included in the AWT and Swing libraries but provides a developer friendly
-                        API with a stable game loop, many different instances like images and rectangles and services
-                        that allow things such as tweening, raycasting, and detecting input. Many names and functionalities
-                        of this framework were derived from Roblox.
-                    </p>
-                </div>
-            </div>
-
-            <div class="past-work-item">
-                <h1>
-                    <a target="_blank" href="index.html">Portfolio Website</a>
-                </h1>
-                
-                <div class="past-work-item-cover-container"></div>
-
-                <div class="past-work-item-footer">
-                    <h1>Role: Creator</h1>
-                    <h1>Description: </h1>
-                    <p>
-                        Yep, you're seeing it right now. This website was programmed from scratch using HTML, CSS,
-                        and vanilla JS.
-                    </p>
+            <div class="stat"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M7 11v9H4a1 1 0 01-1-1v-7a1 1 0 011-1h3zM7 11l4-8c1.7 0 2.8 1.3 2.5 3L13 9h5.5a2 2 0 012 2.3l-1.2 7A2 2 0 0117.3 20H7" />
+                </svg>
+                <div>
+                    <div class="top"><b data-stat="likes">...</b></div><span>Total likes</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact-section" class="last-section">
-        <div id="contact-open">
-            <h1 id="contact-open-text">CONTACT ME</h1>
-            <img src="media/arrow-down.png" alt="" class="dropdown-arrow">
-        </div>
 
-        <div id="contact-me" hidden>
-            <div id="contact-me-mid">
-                <p>Project Name:</p>
-                <input type="text" id="project-name-inp" class="req-input">
-
-                <p>Project Description:</p>
-                <input type="text" id="project-desc-inp" class="req-input">
-
-                <p>Estimated Scripting Budget (USD/Robux):</p>
-                <input type="text" id="project-budget-inp" class="req-input">
-
-                <p>Deadline:</p>
-                <input type="text" id="project-deadline-inp" class="req-input">
-
-                <p>Your Discord Contact:</p>
-                <input type="text" id="usr-contact-inp" class="req-input">
-
-                <input type="button" value="Send" id="submit-req-button">
+    <section id="work">
+        <div class="wrap">
+            <h2>My work</h2>
+            <p class="sec-sub">The games I've worked on, including commissions and personal projects.</p>
+            <div id="projects"></div>
+            <div class="also">
+                <a href="https://github.com/ObSp/JGame-Public"><b>JGame</b> &ndash; a Java game framework I made, with
+                    an API modeled on Roblox</a>
+                <a href="https://paulw.is-a.dev/"><b>Web and mobile work</b> &ndash; my full-stack portfolio</a>
             </div>
         </div>
-            
     </section>
+
+    <section id="build">
+        <div class="wrap">
+            <h2>What I can build for your game</h2>
+            <p class="sec-sub">Pick one piece or hand me the whole project.</p>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Gameplay systems</h3>
+                    <p>Rounds, quests, leveling, combat and progression loops like roll, collect, upgrade and repeat.
+                    </p>
+                </div>
+                <div class="skill">
+                    <h3>Data and backend</h3>
+                    <p>Saving that survives updates, global leaderboards and server-side checks that keep exploiters
+                        out.</p>
+                </div>
+                <div class="skill">
+                    <h3>UI</h3>
+                    <p>HUDs, inventories, menus and dialogue that feel good to use on both PC and mobile.</p>
+                </div>
+                <div class="skill">
+                    <h3>Whole games</h3>
+                    <p>From first prototype to launch, including planning and project management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" hidden>
+        <div class="wrap">
+            <h2>What clients say</h2>
+            <p class="sec-sub">Messages from people I've built games for.</p>
+            <div id="reviews-grid"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrap contact">
+            <div>
+                <h2>Tell me about your game</h2>
+                <p class="sec-sub" style="margin-bottom:0">Fill in what you know and I'll message you back on Discord.
+                </p>
+                <h3>My socials:</h3>
+                <div id="home-contact-items">
+                    <a href="https://www.roblox.com/users/1427306606/profile" target="_blank">
+                        <div class="home-contact-item">
+                            <img src="/media/icons/roblox.png" alt="">
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/paulwin-dev" target="_blank">
+                        <div class="home-contact-item">
+                            <img src="/media/icons/github.png" alt="">
+                        </div>
+                    </a>
+
+                    <a href="https://discord.com/users/834489773573406770" target="_blank">
+                        <div class="home-contact-item">
+                            <img src="/media/icons/discord.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <form id="f">
+                <input name="website" tabindex="-1" autocomplete="off" aria-hidden="true"
+                    style="position:absolute;left:-9999px">
+                <label>Your Discord username<input name="u" autocomplete="off" placeholder="" required></label>
+                <label>Project name<input name="n" autocomplete="off"></label>
+                <label>What should I build?<textarea name="d" required></textarea></label>
+                <div class="row">
+                    <label>Budget (USD or Robux)<input name="b" autocomplete="off"></label>
+                    <label>Deadline<input name="l" autocomplete="off"></label>
+                </div>
+                <button class="btn pri" type="submit">Send message</button>
+                <p id="status" role="status"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">Paul, Germany. Looking for web or app work instead? See the <a
+                href="https://paulw.is-a.dev/">full portfolio</a>.</div>
+    </footer>
+
+    <script src="index.js" defer></script>
 </body>
+
 </html>
