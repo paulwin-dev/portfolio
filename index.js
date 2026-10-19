@@ -1,7 +1,7 @@
 const P = [
     {
         n: "Flame Trainer", u: "https://www.roblox.com/games/16772371910/Flame-Trainer-AVATAR-EDITOR-FREE-HELLO-KITTY", r: "Commissioned", m: "media/thumbs/FlameTrainer.png",
-        d: "A combat game with <b>8M+</b> vists. I led the scripting until I moved on; the game is still being updated.",
+        d: "A combat game with <b>8M+</b> visits. I led the scripting until I moved on; the game is still being updated.",
         b: ["Duel system", "Skin picker", "Wig snatching mechanic"]
     },
     {
