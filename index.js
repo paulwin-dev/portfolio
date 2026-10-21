@@ -5,7 +5,7 @@ const P = [
         b: ["Duel system", "Skin picker", "Wig snatching mechanic"]
     },
     {
-        n: "Realistic Gun Test", u: "https://www.roblox.com/games/14482243012/Realistic-Gun-test", r: "Lead programmer", m: "https://www.youtube.com/embed/DDlNVAxtNGE?si=xfFxtHCnjffomaPu",
+        n: "Realistic Gun Test", u: "https://www.roblox.com/games/14482243012/Realistic-Gun-test", r: "(Past) Lead programmer", m: "https://www.youtube.com/embed/DDlNVAxtNGE?si=xfFxtHCnjffomaPu",
         d: "A round-based realistic shooter. I scripted everything in the game except the gun system.",
         b: ["Round system and match flow", "All UI, quests and the level system", "A realistic jet system, built as a separate prototype"],
         x: ["Try the jet prototype", "https://www.roblox.com/games/84464085424305/Advanced-Jet-System"]
@@ -16,27 +16,27 @@ const P = [
         b: ["Procedural character generation system", "Monster AI", "Production-ready monetization"],
     },
     {
-        n: "Rogue West", u: "https://www.youtube.com/watch?v=7A9-KCCrizI", r: "Lead programmer & designer", m: "https://www.youtube.com/embed/7A9-KCCrizI?si=2jcireVBiAdbrm8J",
+        n: "Rogue West", u: "https://www.youtube.com/watch?v=7A9-KCCrizI", r: "(Past) Lead programmer & designer", m: "https://www.youtube.com/embed/7A9-KCCrizI?si=2jcireVBiAdbrm8J",
         d: "An open world wild west RPG game. A personal project of mine I've been working on for about a year.",
         b: ["Optimized, interactible <b>NPC AI</b>", "Scalable data saving & handling", "Economy & jobs system"],
     },
     {
-        n: "Brainrot Survival", r: "Lead programmer", m: "media/thumbs/BrainrotSurvival.mp4", v: 1,
+        n: "Brainrot Survival", r: "(Past) Lead programmer", m: "media/thumbs/BrainrotSurvival.mp4", v: 1,
         d: "A round-based melee combat game where you fight against brainrots. The video shows off the game's combat system.",
         b: ["Exploit-safe combat", "Accurate hitboxes & timing with animations"],
     },
     {
-        n: "Voxel World", u: "https://www.roblox.com/games/115615727003858/Voxel-Game", r: "Lead programmer", m: "https://www.youtube.com/embed/_W7VCM8gDn0?si=ejsTcYN35HjfOkoj",
+        n: "Voxel World", u: "https://www.roblox.com/games/115615727003858/Voxel-Game", r: "(Past) Lead programmer", m: "https://www.youtube.com/embed/_W7VCM8gDn0?si=ejsTcYN35HjfOkoj",
         d: "A full-fledged minecraft clone in Roblox that includes world saving, procedural terrain generation, biomes, and more.",
         b: ["Optimized terrain generation and rendering", "Complex biomes system based on heat and humidity", "Inventory system", "World saving & loading"],
     },
     {
-        n: "Sword RNG", r: "Lead programmer", m: "media/thumbs/RollMechanic.mp4", v: 1,
+        n: "Sword RNG", r: "(Past) Lead programmer", m: "media/thumbs/RollMechanic.mp4", v: 1,
         d: "A roll-for-swords game with fights, built until the project was cancelled before launch. The clip shows an early version of the roll.",
         b: ["Exploit-safe server-side rolling", "Global leaderboards", "Inventory, currency and combat"]
     },
     {
-        n: "Deep in Debt", u: "https://www.roblox.com/games/15357459254/Deep-In-Debt", r: "Lead programmer and project manager", m: "media/thumbs/DeepInDebt.webp",
+        n: "Deep in Debt", u: "https://www.roblox.com/games/15357459254/Deep-In-Debt", r: "(Past) Lead programmer and project manager", m: "media/thumbs/DeepInDebt.webp",
         d: "A retro puzzle/story game inspired by find cheese to feed a rat: pay off your debt within three days. The linked build is an early playable version.",
         b: ["Dialogue system", "Light and door systems", "Story and pacing"]
     }
